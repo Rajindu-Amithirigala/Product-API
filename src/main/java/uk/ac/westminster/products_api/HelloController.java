@@ -11,7 +11,7 @@ import java.time.LocalDate;
  *   GET /hello   -> a simple greeting
  *   GET /status  -> a simple status message
  * TODO (Lab Activity 3):
- *   Add a new endpoint GET /goodbye that returns the String
+ *   Add a new endpoint GET /goodbye that addreturns the String
  *   "Goodbye from Spring Boot!"
  */
 
