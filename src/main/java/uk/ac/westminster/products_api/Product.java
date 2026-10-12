@@ -17,4 +17,7 @@ public class Product {
     public String getName() { return name; }
 //  Since there's no error or warning, I'd only notice by calling the endpoint in Swagger UI and checking the JSON against the class's fields, so I'd check every field after adding or changing a class.
     public double getPrice() { return price; }
+    public void setId(Long id) { this.id = id; }
+    public void setName(String name) { this.name = name; }
+    public void setPrice(double price) { this.price = price; }
 }
