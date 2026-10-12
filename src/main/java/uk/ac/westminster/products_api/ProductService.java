@@ -1,4 +1,5 @@
 package uk.ac.westminster.products_api;
+import java.util.Optional;
 
 import org.springframework.stereotype.Service;
 
@@ -19,5 +20,11 @@ public class ProductService {
         product.setId(nextId++); // use the value, then add one
         products.add(product);
         return product;
+    }
+
+    public Optional<Product> getProductById(Long id) {
+        return products.stream()
+                .filter(p -> p.getId().equals(id))
+                .findFirst();
     }
 }
